@@ -23,15 +23,23 @@ Think of your personal bank account experience When in doubt, go for the simples
 **I want to** see the history (operation, date, amount, balance)  of my operations  
 
 
-#Realisation
-How to start Application : Main Spring Boot class BankAccountApplication
+
+
+# Realisation
+How to start Application : Run the Spring Boot Main class BankAccountApplication
+
+## Requirement Lombok:
+https://projectlombok.org
+Lombok project is a plugin which allows to generate code with annotations.
+In order to have code compiled while coding. Plugin lombok need to add to Intellij.
+
 ## Available REST API :
-- Deposit to accountId an amount : http://localhost:8080/account/deposit/{accountId}/{amount} <br/>
-  Example : http://localhost:8080/account/deposit/thtran/500
-- Withdraw from accountId an amount : http://localhost:8080/account/withdraw/{accountId}/{amount} <br/>
-  Example : http://localhost:8080/account/withdraw/thtran/200 
-- Consult account : http://localhost:8080/account/consult/{accountId} <br/>
-  Example : http://localhost:8080/account/consult/thtran
+- Deposit to accountId an amount : http://localhost:8080/bank/account/deposit/{accountId}/{amount} <br/>
+  Example : http://localhost:8080/bank/account/deposit/thtran/500
+- Withdraw from accountId an amount : http://localhost:8080/bank/account/withdraw/{accountId}/{amount} <br/>
+  Example : http://localhost:8080/bank/account/withdraw/thtran/200 
+- Consult account : http://localhost:8080/bank/account/consult/{accountId} <br/>
+  Example : http://localhost:8080/bank/account/consult/thtran
 - Consult all account : http://localhost:8080/bank/account/all
-- Consult transaction history within periodInMonth http://localhost:8080/account/history/{accountId}/{periodInMonth} <br/>
-  Example : http://localhost:8080/account/history/thtran/2
+- Consult transaction history within periodInMonth http://localhost:8080/bank/account/history/{accountId}/{periodInMonth} <br/>
+  Example : http://localhost:8080/bank/account/history/thtran/2
